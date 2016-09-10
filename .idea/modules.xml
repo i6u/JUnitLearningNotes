@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/junit01/junit01.iml" filepath="$PROJECT_DIR$/junit01/junit01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stub-mock/stub-mock.iml" filepath="$PROJECT_DIR$/stub-mock/stub-mock.iml" />
     </modules>
   </component>
 </project>
