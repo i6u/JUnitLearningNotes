@@ -13,6 +13,7 @@ public class CalcuateTest {
     private static Calcuate calcuate;
     @BeforeClass
     public static void setUp(){
+        System.out.printf("@BeforeClass..");
         calcuate = new Calcuate();
     }
 
@@ -47,7 +48,11 @@ public class CalcuateTest {
 
     @Test(timeout = 300)    //时间测试，300毫秒内正常
     public void timeTesi() throws InterruptedException {
-        Thread.sleep(1213);
-    }ArithmeticException
+        Thread.sleep(121);
+    }
 
+    @After
+    public void teamDown(){
+        System.out.printf("@after..");
+    }
 }
