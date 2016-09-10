@@ -1,9 +1,7 @@
 package zyr.learn.util;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
+
 import static org.junit.Assert.*;
 
 /**
@@ -11,10 +9,17 @@ import static org.junit.Assert.*;
  */
 public class CalcuateTest {
     private static Calcuate calcuate;
+    //beforeClass执行一次
     @BeforeClass
     public static void setUp(){
-        System.out.printf("@BeforeClass..");
+        System.out.println("@BeforeClass..");
         calcuate = new Calcuate();
+    }
+
+    //before每个@Test方法执行前都会执行一次
+    @Before
+    public void begin() {
+        System.out.println("@Before");
     }
 
     @Test
@@ -53,6 +58,12 @@ public class CalcuateTest {
 
     @After
     public void teamDown(){
-        System.out.printf("@after..");
+        System.out.println("@after..");
+    }
+
+    @AfterClass
+    public static void end(){
+        System.out.println("@BeforeClass..");
+        calcuate = new Calcuate();
     }
 }
