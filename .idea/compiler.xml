@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="JUnit-Demo" />
         <module name="junit01" />
         <module name="stub-mock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="JUnit-Demo" target="1.5" />
       <module name="junit01" target="1.5" />
       <module name="stub-mock" target="1.5" />
     </bytecodeTargetLevel>
